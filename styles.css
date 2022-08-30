@@ -5,7 +5,7 @@
 
 .barranav {
     background-color: rgb(36, 36, 122);
-    height: 100px;
+    height: 110px;
     color: white;
 }
 
@@ -16,14 +16,32 @@
     margin-left: 35px;
 }
 
-.linksbarra a:hover{
-    text-decoration: none;
-    color: white;
-}
-.linksbarra {
-    
+header .centrar {
     text-align: center;
 }
+
+a{ 
+    text-decoration: none;
+    font-size: 20000px;
+}
+
+
+.linksbarra {
+    color: white;
+
+    font-size: 20px;
+    padding: 10px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+header .centrar a:hover{
+    color: rgb(95, 95, 95);
+    transition: color .4s;
+}
+
 
 body {
     background-color: rgb(17, 15, 15);
