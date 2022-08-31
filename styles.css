@@ -25,16 +25,16 @@ a{
     font-size: 20000px;
 }
 
+a:hover{
+  text-decoration: none;
+}
+
 
 .linksbarra {
     color: white;
 
     font-size: 20px;
     padding: 10px;
-}
-
-a:hover{
-    text-decoration: none;
 }
 
 header .centrar a:hover{
@@ -44,6 +44,53 @@ header .centrar a:hover{
 
 
 body {
-    background-color: rgb(17, 15, 15);
+    background-color: rgb(1, 7, 17);
     color: white;
 }
+
+
+p {
+    color: black;
+}
+
+/*************************************************/
+.scroll-tray {
+    white-space: nowrap;
+  }
+  .scroll-tray div {
+    display: inline-block;
+  }
+
+  .scroll-tray img {
+    border-radius: 0.3rem;
+    margin: 7px 5px;
+    padding: 0;
+    /* height: 200px; */
+    width:  340px;
+  }
+
+  .scroll-holder {
+    overflow-x: hidden;
+  }
+
+  .scroll-holder .scroll-tray:first-child {
+    animation: scroll-tray-hero 180s linear infinite;
+  }
+
+  .scroll-holder .scroll-tray:last-child {
+    animation: scroll-tray-hero 120s linear infinite;
+  }
+
+  @keyframes scroll-tray-hero {
+    0% {
+      transform: translateX(0);
+    }
+
+    99.99% {
+      transform: translateX(-7098px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
